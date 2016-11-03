@@ -1,4 +1,4 @@
-// Lighthouse Labs - Callback Exercise //
+// Lighthouse Labs - W1D4- Callback Exercise - Find Waldo//
 
 // Exercise was broken into two sections
 // To test first part - comment out forEach section
@@ -11,7 +11,7 @@
 function findWaldo(arr, found) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] === "Waldo") {
-      found((i + 1));   // execute callback
+      found((i));   // execute callback
     }
   }
 }
@@ -27,7 +27,7 @@ findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
 
 function actionWhenFound(num, index) {
   if (num === "Waldo") {
-    console.log("Found Waldo at index " + (index + 1));
+    console.log("Found Waldo at index " + index);
   }
 }
 
